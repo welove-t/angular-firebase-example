@@ -11,7 +11,7 @@ import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 })
 export class CreateComponent implements OnInit {
 
-  petIds = [...Array(10)].map((_,i) => i + 1);
+  petIds = [...Array(10)].map((_,　i) => i + 1);
   config: SwiperConfigInterface = {
     loop: true,
     navigation: true,
@@ -21,7 +21,7 @@ export class CreateComponent implements OnInit {
   };
   selectedPetId = 0;
   form = this.fb.group({
-    name: ['',[
+    name: ['',　[
       Validators.required,
       Validators.maxLength(40)
     ]],
